@@ -124,7 +124,7 @@ grid.xgb <- expand.grid(eta=c(0.01, 0.03, 0.09),
                         min_RMSE=0)
 
 
-# XGBoost with tree as base learner with 10 fold cv (takes a really long time to train)
+# XGBoost with tree as base learner with 10 fold cv 
 for (i in 1:nrow(grid.xgb)) {
   params <- list(eta=grid.xgb$eta[i],
                  max_depth=grid.xgb$max_depth[i],
